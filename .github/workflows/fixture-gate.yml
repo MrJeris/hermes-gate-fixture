@@ -1,7 +1,7 @@
 name: Fixture gate
 on:
   push:
-    branches: [main, codex/label-test]
+    branches: [main, codex/label-test, codex/hermes-recovery-audit]
 permissions:
   contents: read
 jobs:
