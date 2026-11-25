@@ -1,3 +1,3 @@
 'use strict';
 
-exports.reportLabel = () => 'fixture result';
+exports.reportLabel = () => 'fixture reslt';
