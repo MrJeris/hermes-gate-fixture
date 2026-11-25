@@ -1,0 +1,15 @@
+name: Fixture gate
+on:
+  push:
+    branches: [main, codex/label-test]
+permissions:
+  contents: read
+jobs:
+  report-label:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - run: node --test report.test.cjs
